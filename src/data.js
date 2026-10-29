@@ -1,101 +1,155 @@
-export const collection = [
+// Model names and style codes are placeholders until each licence is signed.
+// Replace `style` with the exact code from the original pair's box label.
+
+export const brands = {
+  nike: { name: 'NIKE', bg: '#0A0A0A', ink: '#FFFFFF' },
+  jordan: { name: 'JORDAN', bg: '#E3242B', ink: '#FFFFFF' },
+}
+
+export const cards = [
   {
-    id: 'K-001',
-    name: 'Apex Runner',
-    tag: 'Runner',
-    edition: '2,500',
-    bg: '#FF4D00',
-    shoe: { upper: '#F4F1EA', accent: '#111111', sole: '#111111' },
+    id: 'jordan-1-low',
+    model: 'Air Jordan 1 Low',
+    brand: 'jordan',
+    style: 'XX0000-001',
+    img: '/shoes/jordan-1-low.webp',
+    card: '#2B59FF',
+    edition: 2500,
   },
   {
-    id: 'K-002',
-    name: 'Courtline Hi',
-    tag: 'Basketball',
-    edition: '1,500',
-    bg: '#1F3BFF',
-    shoe: { upper: '#FFFFFF', accent: '#FF4D00', sole: '#111111', high: true },
+    id: 'nike-dunk-sb-futura',
+    model: 'Dunk Low SB × Futura',
+    brand: 'nike',
+    style: 'XX0000-002',
+    img: '/shoes/nike-dunk-sb-futura.webp',
+    card: '#E3242B',
+    edition: 1000,
   },
   {
-    id: 'K-003',
-    name: 'Volt Sprint',
-    tag: 'Track',
-    edition: '2,000',
-    bg: '#111111',
-    shoe: { upper: '#D7FF1F', accent: '#111111', sole: '#F4F1EA' },
+    id: 'jordan-12',
+    model: 'Air Jordan 12 Retro',
+    brand: 'jordan',
+    style: 'XX0000-003',
+    img: '/shoes/jordan-12.webp',
+    card: '#0E7C5A',
+    edition: 2000,
   },
   {
-    id: 'K-004',
-    name: 'Ground Zero',
-    tag: 'Skate',
-    edition: '3,000',
-    bg: '#D7FF1F',
-    shoe: { upper: '#111111', accent: '#F4F1EA', sole: '#111111' },
+    id: 'nike-sacai-ldwaffle',
+    model: 'LDWaffle × sacai × fragment',
+    brand: 'nike',
+    style: 'XX0000-004',
+    img: '/shoes/nike-sacai-ldwaffle.webp',
+    card: '#F2B400',
+    edition: 1500,
   },
   {
-    id: 'K-005',
-    name: 'Redline Hi',
-    tag: 'Lifestyle',
-    edition: '1,000',
-    bg: '#F4F1EA',
-    shoe: { upper: '#E10600', accent: '#111111', sole: '#111111', high: true },
+    id: 'jordan-1-mid',
+    model: 'Air Jordan 1 Mid',
+    brand: 'jordan',
+    style: 'XX0000-005',
+    img: '/shoes/jordan-1-mid.webp',
+    card: '#7A3CFF',
+    edition: 2500,
   },
   {
-    id: 'K-006',
-    name: 'Chase Gold',
-    tag: 'Chase variant',
-    edition: '250',
-    bg: '#E8B400',
-    shoe: { upper: '#111111', accent: '#E8B400', sole: '#111111', lace: '#E8B400' },
+    id: 'nike-air-orange',
+    model: 'Nike Air Orange',
+    brand: 'nike',
+    style: 'XX0000-006',
+    img: '/shoes/nike-air-orange.webp',
+    card: '#0A0A0A',
+    edition: 1500,
+  },
+  {
+    id: 'nike-air-zoom-blue',
+    model: 'Nike Air Zoom Runner',
+    brand: 'nike',
+    style: 'XX0000-007',
+    img: '/shoes/nike-air-zoom-blue.webp',
+    card: '#FF6A1A',
+    edition: 3000,
+  },
+  {
+    id: 'nike-cleat',
+    model: 'Mercurial Vapor FG',
+    brand: 'nike',
+    style: 'XX0000-008',
+    img: '/shoes/nike-cleat.webp',
+    card: '#1FBF5B',
+    edition: 250,
+    chase: true,
   },
 ]
 
-export const steps = [
+export const twinPacks = [
+  {
+    id: 'nike-pegasus-pair',
+    model: 'Nike Pegasus',
+    brand: 'nike',
+    style: 'XX0000-009',
+    img: '/shoes/nike-pegasus-pair.webp',
+  },
+  {
+    id: 'nike-dunk-gtx-pair',
+    model: 'Dunk Low GORE-TEX',
+    brand: 'nike',
+    style: 'XX0000-010',
+    img: '/shoes/nike-dunk-gtx-pair.webp',
+  },
+]
+
+export const licensingSteps = [
   {
     n: '01',
-    title: 'Sculpt',
-    body: 'Every silhouette is 3D-modelled from real footwear proportions, down to the stitch lines and tread pattern.',
+    title: 'Partner',
+    body: 'We sign an official licence with the shoe brand. No knock-offs, no "inspired by". Real names, real logos.',
   },
   {
     n: '02',
-    title: 'Cast',
-    body: 'The upper is pressure die-cast in zinc alloy. It has real weight in the hand, not hollow plastic.',
+    title: 'Match',
+    body: 'We work from the brand’s own tech pack and scan the original pair, so the die-cast carries the exact style code of the shoe it replicates.',
   },
   {
     n: '03',
-    title: 'Paint',
-    body: 'Multi-pass enamel and pad-printed details. Rubber-touch soles and fabric laces on premium runs.',
+    title: 'Approve',
+    body: 'Every prototype, from paint and stitching to sole tread, goes back to the brand for sign-off before tooling.',
   },
   {
     n: '04',
-    title: 'Pack',
-    body: 'Sealed in a numbered blister card built to be hung on a wall, or opened, if you are brave.',
+    title: 'Drop',
+    body: 'Co-branded, numbered cards release alongside the shoe drop, or as a retro for the grails that already have a following.',
   },
 ]
 
 export const specs = [
   ['Scale', '1:6'],
-  ['Length', '~5 cm'],
   ['Body', 'Zinc alloy'],
   ['Sole', 'Rubber-touch'],
-  ['Weight', '38 g'],
+  ['Laces', 'Real fabric'],
+  ['Base', 'Engraved style code'],
   ['Pack', 'Numbered card'],
 ]
 
 export const faqs = [
   {
-    q: 'What exactly is a shoe die-cast?',
-    a: 'A palm-sized, metal-bodied collectible sneaker. Think of the die-cast car on your shelf, but it is a pair of kicks instead.',
+    q: 'Are these officially licensed?',
+    a: 'That is the whole model. Kickers only produces a shoe once the brand has signed a licence and approved the prototype. The models shown here are concept cards for the partnerships we are building.',
   },
   {
-    q: 'Are these real brand sneakers?',
-    a: 'Series 01 is fully original Kickers designs. We are opening conversations with footwear brands and designers for licensed collabs.',
+    q: 'What does "exact style code" mean?',
+    a: 'Every sneaker has a manufacturer style code on its box label, for example XX0000-000. Each Kickers die-cast is engraved with the same code as the real pair it replicates, plus its own unit number.',
+  },
+  {
+    q: 'What is a chase card?',
+    a: 'A rare model hidden in random packs. In Series 01 that is the Mercurial Vapor FG, limited to 250 pieces worldwide.',
+  },
+  {
+    q: 'I work at a footwear brand. How do we partner?',
+    a: 'Join the waitlist and select "Brand". We will reach out with our licensing deck, sample prototypes and revenue-share terms.',
   },
   {
     q: 'When do they ship?',
-    a: 'Series 01 is in prototyping. Waitlist members get first access to the drop and the chase variant odds.',
-  },
-  {
-    q: 'What is a chase variant?',
-    a: 'A rare colourway hidden in random packs. Series 01 has one: Chase Gold, limited to 250 pieces worldwide.',
+    a: 'Series 01 is in prototyping. Waitlist members get first access to the drop and the chase-card odds.',
   },
 ]
